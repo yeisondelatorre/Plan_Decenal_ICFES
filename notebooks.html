@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Content with notebooks &#8212; My sample book</title>
+    <title>Resumen del Diagnostico &#8212; My sample book</title>
   
   
   
@@ -62,8 +62,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -171,13 +169,14 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Análisis de Trayectorias Educativas: Plan Decenal Santa Marta
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Content with notebooks</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Resumen del Diagnostico</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
@@ -364,7 +363,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Content with notebooks</h1>
+    <h1>Resumen del Diagnostico</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -374,10 +373,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Resumen del Diagnostico</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-las-columnas-varian-mucho">Problema: Las columnas varian mucho</a></li>
 </ul>
+
             </nav>
         </div>
     </div>
@@ -388,84 +387,1445 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="content-with-notebooks">
-<h1>Content with notebooks<a class="headerlink" href="#content-with-notebooks" title="Permalink to this heading">#</a></h1>
-<p>You can also create content with Jupyter Notebooks. This means that you can include
-code blocks and their outputs in your book.</p>
-<section id="markdown-notebooks">
-<h2>Markdown + notebooks<a class="headerlink" href="#markdown-notebooks" title="Permalink to this heading">#</a></h2>
-<p>As it is markdown, you can embed images, HTML, etc into your posts!</p>
-<p><img alt="" src="https://myst-parser.readthedocs.io/en/latest/_static/logo-wide.svg" /></p>
-<p>You can also <span class="math notranslate nohighlight">\(add_{math}\)</span> and</p>
-<div class="math notranslate nohighlight">
-\[
-math^{blocks}
-\]</div>
-<p>or</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-\mbox{mean} la_{tex} \\ \\
-math blocks
-\end{aligned}
-\end{split}\]</div>
-<p>But make sure you $Escape $your $dollar signs $you want to keep!</p>
-</section>
-<section id="myst-markdown">
-<h2>MyST markdown<a class="headerlink" href="#myst-markdown" title="Permalink to this heading">#</a></h2>
-<p>MyST markdown works in Jupyter Notebooks as well. For more information about MyST markdown, check
-out <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST guide in Jupyter Book</a>,
-or see <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/">the MyST markdown documentation</a>.</p>
-</section>
-<section id="code-blocks-and-outputs">
-<h2>Code blocks and outputs<a class="headerlink" href="#code-blocks-and-outputs" title="Permalink to this heading">#</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.
-For example, here’s some sample Matplotlib code:</p>
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">glob</span><span class="w"> </span><span class="kn">import</span> <span class="n">glob</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">gc</span>
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lee solo las primeras filas de un archivo para ver la estructura</span>
+<span class="n">muestra</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="s1">&#39;Examen_Saber_11_20081.txt&#39;</span><span class="p">,</span>
+    <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span>  <span class="c1"># El ICFES suele usar este separador, verificar</span>
+    <span class="n">nrows</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span>  <span class="c1"># O &#39;utf-8&#39;, probar cuál funciona</span>
+<span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Columnas:&quot;</span><span class="p">,</span> <span class="n">muestra</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Primeras filas:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">muestra</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Tipos de datos:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">muestra</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Columnas: [&#39;periodo&#39;, &#39;estu_consecutivo&#39;, &#39;estu_estudiante&#39;, &#39;cole_bilingue&#39;, &#39;cole_area_ubicacion&#39;, &#39;cole_calendario&#39;, &#39;cole_caracter_colegio&#39;, &#39;cole_cod_dane_establecimiento&#39;, &#39;cole_cod_depto_ubicacion&#39;, &#39;cole_cod_mcpio_ubicacion&#39;, &#39;cole_codigo_icfes&#39;, &#39;cole_genero&#39;, &#39;cole_inst_jornada&#39;, &#39;cole_naturaleza&#39;, &#39;cole_nombre_establecimiento&#39;, &#39;desemp_idioma&#39;, &#39;desemp_profundizacion&#39;, &#39;estu_ano_termino_bachill&#39;, &#39;estu_area_reside&#39;, &#39;estu_carrdeseada_razon&#39;, &#39;estu_cod_reside_mcpio&#39;, &#39;estu_depto_presentacion&#39;, &#39;estu_edad&#39;, &#39;estu_etnia&#39;, &#39;estu_fechanacimiento&#39;, &#39;estu_genero&#39;, &#39;estu_ies_cod_mpio_deseada&#39;, &#39;estu_ies_dept_deseada&#39;, &#39;estu_ies_deseada_nombre&#39;, &#39;estu_ies_mpio_deseada&#39;, &#39;estu_mcpio_presentacion&#39;, &#39;estu_mes_termino_bachill&#39;, &#39;estu_pais_reside&#39;, &#39;estu_puesto&#39;, &#39;estu_razoninstituto&#39;, &#39;estu_reside_depto&#39;, &#39;estu_reside_mcpio&#39;, &#39;estu_tipodocumento&#39;, &#39;estu_trabaja&#39;, &#39;estu_veces_estado&#39;, &#39;estu_zona_reside&#39;, &#39;fami_acueducto&#39;, &#39;fami_alcantarillado&#39;, &#39;fami_aseo&#39;, &#39;fami_automovil&#39;, &#39;fami_celular&#39;, &#39;fami_computador&#39;, &#39;fami_cuartos_hogar&#39;, &#39;fami_dormitorios_hogar&#39;, &#39;fami_dvd&#39;, &#39;fami_educa_hermano&#39;, &#39;fami_educacionmadre&#39;, &#39;fami_educacionpadre&#39;, &#39;fami_electricidad&#39;, &#39;fami_estrato_vivienda&#39;, &#39;fami_estufa&#39;, &#39;fami_hermanos_estudian&#39;, &#39;fami_horno&#39;, &#39;fami_ing_fmiliar_mensual&#39;, &#39;fami_internet&#39;, &#39;fami_lavadora&#39;, &#39;fami_microondas&#39;, &#39;fami_motocicleta&#39;, &#39;fami_nevera&#39;, &#39;fami_nivel_sisben&#39;, &#39;fami_num_hermanos&#39;, &#39;fami_ocupa_madre&#39;, &#39;fami_ocupa_padre&#39;, &#39;fami_pisos_hogar&#39;, &#39;fami_posicion_hermanos&#39;, &#39;fami_sanitario&#39;, &#39;fami_servicio_television&#39;, &#39;fami_sn_lee_escribe_madre&#39;, &#39;fami_sn_lee_escribe_padre&#39;, &#39;fami_telefono_fijo&#39;, &#39;fami_televisor&#39;, &#39;nombre_idioma&#39;, &#39;nombre_interdisciplinar&#39;, &#39;nombre_profundizacion&#39;, &#39;punt_biologia&#39;, &#39;punt_c_sociales&#39;, &#39;punt_filosofia&#39;, &#39;punt_fisica&#39;, &#39;punt_geografia&#39;, &#39;punt_historia&#39;, &#39;punt_ingles&#39;, &#39;punt_interdisciplinar&#39;, &#39;punt_lenguaje&#39;, &#39;punt_matematicas&#39;, &#39;punt_profundizacion&#39;, &#39;punt_quimica&#39;]
+
+Primeras filas:
+   periodo    estu_consecutivo estu_estudiante  cole_bilingue  \
+0    20081  SB1120081008514223      ESTUDIANTE              1   
+1    20081  SB1120081006231529      ESTUDIANTE              1   
+2    20081  SB1120081006432976      ESTUDIANTE              1   
+3    20081  SB1120081008557162      ESTUDIANTE              1   
+4    20081  SB1120081008433531      ESTUDIANTE              1   
+
+  cole_area_ubicacion  cole_calendario cole_caracter_colegio  \
+0                   U                2             ACADEMICO   
+1                   U                2             ACADEMICO   
+2                   U                2             ACADEMICO   
+3                   U                2             ACADEMICO   
+4                   U                2             ACADEMICO   
+
+   cole_cod_dane_establecimiento  cole_cod_depto_ubicacion  \
+0                   305001003688                         5   
+1                   305001003688                         5   
+2                   305001003688                         5   
+3                   305001003688                         5   
+4                   305001003688                         5   
+
+   cole_cod_mcpio_ubicacion  ...  punt_filosofia punt_fisica punt_geografia  \
+0                      5001  ...       62.450001   54.330002      61.689999   
+1                      5001  ...       54.500000   59.290001      51.060001   
+2                      5001  ...       59.930000   61.709999      49.060001   
+3                      5001  ...       51.849998   61.709999      55.080002   
+4                      5001  ...       37.830002   40.669998      51.060001   
+
+   punt_historia punt_ingles punt_interdisciplinar punt_lenguaje  \
+0      61.689999  100.000000                 55,48     70.860001   
+1      51.060001   79.550003                 64,39     67.500000   
+2      49.060001   83.410004                 69,41     64.949997   
+3      55.080002   91.709999                 57,11     74.639999   
+4      51.060001   91.709999                 48,31     44.389999   
+
+   punt_matematicas  punt_profundizacion  punt_quimica  
+0         74.379997                 7,03     56.099998  
+1         67.050003                 6,66     42.380001  
+2         66.940002                 6,06     54.200001  
+3         66.940002                 5,78     57.889999  
+4         67.050003                 4,84     45.740002  
+
+[5 rows x 91 columns]
+
+Tipos de datos:
+periodo                    int64
+estu_consecutivo          object
+estu_estudiante           object
+cole_bilingue              int64
+cole_area_ubicacion       object
+                          ...   
+punt_interdisciplinar     object
+punt_lenguaje            float64
+punt_matematicas         float64
+punt_profundizacion       object
+punt_quimica             float64
+Length: 91, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ============================================</span>
+<span class="c1"># CONFIGURACION</span>
+<span class="c1"># ============================================</span>
+<span class="n">CARPETA_DATOS</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;C:\Users\PC\Desktop\plan_decenal\icfes\bd_icfes&#39;</span>  <span class="c1"># Cambia esta ruta</span>
+<span class="n">ARCHIVO_SALIDA</span> <span class="o">=</span> <span class="s1">&#39;icfes_saber11_consolidado.parquet&#39;</span>
+<span class="n">CHUNK_SIZE</span> <span class="o">=</span> <span class="mi">100_000</span>  <span class="c1"># Filas por chunk (ajustar segun RAM disponible)</span>
+
+<span class="c1"># Columnas con coma decimal que necesitan conversion</span>
+<span class="n">COLS_COMA_DECIMAL</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;punt_interdisciplinar&#39;</span><span class="p">,</span> <span class="s1">&#39;punt_profundizacion&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ============================================</span>
+<span class="c1"># FUNCION PARA LIMPIAR TIPOS DE DATOS</span>
+<span class="c1"># ============================================</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">limpiar_dataframe</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Convierte columnas con coma decimal y optimiza tipos&quot;&quot;&quot;</span>
+    
+    <span class="c1"># Convertir comas decimales a puntos</span>
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">COLS_COMA_DECIMAL</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
+    
+    <span class="c1"># Optimizar tipos de datos para reducir memoria</span>
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="s1">&#39;object&#39;</span><span class="p">:</span>
+            <span class="c1"># Convertir a categoria si tiene pocos valores unicos</span>
+            <span class="k">if</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">:</span>
+                <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="s1">&#39;float64&#39;</span><span class="p">:</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float32&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="s1">&#39;int64&#39;</span><span class="p">:</span>
+            <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">],</span> <span class="n">downcast</span><span class="o">=</span><span class="s1">&#39;integer&#39;</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">glob</span><span class="w"> </span><span class="kn">import</span> <span class="n">glob</span>
+
+<span class="c1"># ============================================</span>
+<span class="c1"># CONFIGURACION</span>
+<span class="c1"># ============================================</span>
+<span class="n">CARPETA_DATOS</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;C:\Users\PC\Desktop\plan_decenal\icfes\bd_icfes&#39;</span>
+
+<span class="c1"># ============================================</span>
+<span class="c1"># DIAGNOSTICO DE ARCHIVOS</span>
+<span class="c1"># ============================================</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">diagnosticar_archivos</span><span class="p">():</span>
+    <span class="n">patron</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CARPETA_DATOS</span><span class="p">,</span> <span class="s1">&#39;Examen_Saber_11_*.txt&#39;</span><span class="p">)</span>
+    <span class="n">archivos</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="n">patron</span><span class="p">))</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DIAGNOSTICO DE ARCHIVOS ICFES&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+    
+    <span class="n">archivos_ok</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">archivos_error</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">archivo</span> <span class="ow">in</span> <span class="n">archivos</span><span class="p">:</span>
+        <span class="n">nombre</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">archivo</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Analizando: </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">df_full</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+                <span class="n">archivo</span><span class="p">,</span>
+                <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span>
+                <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span><span class="p">,</span>
+                <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span>
+            <span class="p">)</span>
+            
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   OK - Columnas: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df_full</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="si">}</span><span class="s2">, Filas: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df_full</span><span class="p">)</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">archivos_ok</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                <span class="s1">&#39;archivo&#39;</span><span class="p">:</span> <span class="n">nombre</span><span class="p">,</span>
+                <span class="s1">&#39;columnas&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_full</span><span class="o">.</span><span class="n">columns</span><span class="p">),</span>
+                <span class="s1">&#39;filas&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_full</span><span class="p">)</span>
+            <span class="p">})</span>
+            
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   ERROR: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)[:</span><span class="mi">150</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">archivos_error</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                <span class="s1">&#39;archivo&#39;</span><span class="p">:</span> <span class="n">nombre</span><span class="p">,</span>
+                <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+            <span class="p">})</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;RESUMEN&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Archivos OK: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">archivos_ok</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Archivos con ERROR: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">archivos_error</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">archivos_error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">--- ARCHIVOS PROBLEMATICOS ---&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">archivos_error</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="si">{</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;archivo&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   </span><span class="si">{</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;error&#39;</span><span class="p">][:</span><span class="mi">200</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">archivos_ok</span><span class="p">,</span> <span class="n">archivos_error</span>
+
+<span class="c1"># ============================================</span>
+<span class="c1"># EJECUTAR</span>
+<span class="c1"># ============================================</span>
+<span class="n">ok</span><span class="p">,</span> <span class="n">errores</span> <span class="o">=</span> <span class="n">diagnosticar_archivos</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============================================================
+DIAGNOSTICO DE ARCHIVOS ICFES
+============================================================
+
+Analizando: Examen_Saber_11_20081.txt
+   ERROR: Error tokenizing data. C error: Expected 4 fields in line 31270, saw 5
+
+
+Analizando: Examen_Saber_11_20082.txt
+   ERROR: Error tokenizing data. C error: Expected 3 fields in line 3, saw 4
+
+
+Analizando: Examen_Saber_11_20091.txt
+   ERROR: Error tokenizing data. C error: Expected 4 fields in line 6132, saw 5
+
+
+Analizando: Examen_Saber_11_20092.txt
+   ERROR: Error tokenizing data. C error: Expected 1 fields in line 3, saw 4
+
+
+Analizando: Examen_Saber_11_20101.txt
+   ERROR: Error tokenizing data. C error: Expected 4 fields in line 3, saw 5
+
+
+Analizando: Examen_Saber_11_20102.txt
+   ERROR: Error tokenizing data. C error: Expected 3 fields in line 4, saw 5
+
+
+Analizando: Examen_Saber_11_20111.txt
+   ERROR: Error tokenizing data. C error: Expected 5 fields in line 4, saw 6
+
+
+Analizando: Examen_Saber_11_20112.txt
+   ERROR: Error tokenizing data. C error: Expected 2 fields in line 3, saw 4
+
+
+Analizando: Examen_Saber_11_20121.txt
+   ERROR: Error tokenizing data. C error: Expected 5 fields in line 12, saw 7
+
+
+Analizando: Examen_Saber_11_20122.txt
+   ERROR: Error tokenizing data. C error: Expected 5 fields in line 8, saw 6
+
+
+Analizando: Examen_Saber_11_20131.txt
+   ERROR: Error tokenizing data. C error: Expected 2 fields in line 3, saw 5
+
+
+Analizando: Examen_Saber_11_20132.txt
+   ERROR: Error tokenizing data. C error: Expected 2 fields in line 3, saw 9
+
+
+Analizando: Examen_Saber_11_20141.txt
+   ERROR: Error tokenizing data. C error: Expected 5 fields in line 5, saw 8
+
+
+Analizando: Examen_Saber_11_20142.txt
+   ERROR: Error tokenizing data. C error: Expected 1 fields in line 846, saw 2
+
+
+Analizando: Examen_Saber_11_20151.txt
+   ERROR: Error tokenizing data. C error: Expected 1 fields in line 173, saw 2
+
+
+Analizando: Examen_Saber_11_20152.txt
+   ERROR: Error tokenizing data. C error: Expected 1 fields in line 1251, saw 2
+
+
+Analizando: Examen_Saber_11_20161.txt
+   ERROR: Error tokenizing data. C error: Expected 1 fields in line 96, saw 2
+
+
+Analizando: Examen_Saber_11_20162.txt
+   ERROR: Error tokenizing data. C error: Expected 1 fields in line 3261, saw 2
+
+
+Analizando: Examen_Saber_11_20171.txt
+   ERROR: Error tokenizing data. C error: Expected 6 fields in line 28, saw 8
+
+
+Analizando: Examen_Saber_11_20172.txt
+   ERROR: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+
+Analizando: Examen_Saber_11_20181.txt
+   ERROR: Error tokenizing data. C error: Expected 2 fields in line 3, saw 5
+
+
+Analizando: Examen_Saber_11_20182.txt
+   ERROR: Error tokenizing data. C error: Expected 3 fields in line 10, saw 4
+
+
+Analizando: Examen_Saber_11_20191.txt
+   ERROR: Error tokenizing data. C error: Expected 6 fields in line 20, saw 7
+
+
+Analizando: Examen_Saber_11_20192.txt
+   ERROR: Error tokenizing data. C error: Expected 6 fields in line 38, saw 8
+
+
+Analizando: Examen_Saber_11_20201.txt
+   ERROR: Error tokenizing data. C error: Expected 5 fields in line 27, saw 6
+
+
+Analizando: Examen_Saber_11_20202.txt
+   ERROR: Error tokenizing data. C error: Expected 1 fields in line 4, saw 5
+
+
+Analizando: Examen_Saber_11_20211.txt
+   ERROR: Error tokenizing data. C error: Expected 4 fields in line 4, saw 5
+
+
+Analizando: Examen_Saber_11_20212.txt
+   ERROR: Error tokenizing data. C error: Expected 4 fields in line 4, saw 7
+
+
+Analizando: Examen_Saber_11_20221.txt
+   ERROR: Error tokenizing data. C error: Expected 4 fields in line 6, saw 5
+
+
+Analizando: Examen_Saber_11_20222.txt
+   ERROR: Error tokenizing data. C error: Expected 3 fields in line 4, saw 5
+
+
+Analizando: Examen_Saber_11_20231.txt
+   ERROR: Error tokenizing data. C error: Expected 2 fields in line 4, saw 3
+
+
+Analizando: Examen_Saber_11_20232.txt
+   ERROR: Error tokenizing data. C error: Expected 3 fields in line 4, saw 5
+
+
+Analizando: Examen_Saber_11_20241.txt
+   ERROR: Error tokenizing data. C error: Expected 5 fields in line 6, saw 7
+
+
+Analizando: Examen_Saber_11_20242.txt
+   ERROR: Error tokenizing data. C error: Expected 1 fields in line 4, saw 3
+
+
+============================================================
+RESUMEN
+============================================================
+Archivos OK: 0
+Archivos con ERROR: 34
+
+--- ARCHIVOS PROBLEMATICOS ---
+
+Examen_Saber_11_20081.txt:
+   Error tokenizing data. C error: Expected 4 fields in line 31270, saw 5
+
+
+Examen_Saber_11_20082.txt:
+   Error tokenizing data. C error: Expected 3 fields in line 3, saw 4
+
+
+Examen_Saber_11_20091.txt:
+   Error tokenizing data. C error: Expected 4 fields in line 6132, saw 5
+
+
+Examen_Saber_11_20092.txt:
+   Error tokenizing data. C error: Expected 1 fields in line 3, saw 4
+
+
+Examen_Saber_11_20101.txt:
+   Error tokenizing data. C error: Expected 4 fields in line 3, saw 5
+
+
+Examen_Saber_11_20102.txt:
+   Error tokenizing data. C error: Expected 3 fields in line 4, saw 5
+
+
+Examen_Saber_11_20111.txt:
+   Error tokenizing data. C error: Expected 5 fields in line 4, saw 6
+
+
+Examen_Saber_11_20112.txt:
+   Error tokenizing data. C error: Expected 2 fields in line 3, saw 4
+
+
+Examen_Saber_11_20121.txt:
+   Error tokenizing data. C error: Expected 5 fields in line 12, saw 7
+
+
+Examen_Saber_11_20122.txt:
+   Error tokenizing data. C error: Expected 5 fields in line 8, saw 6
+
+
+Examen_Saber_11_20131.txt:
+   Error tokenizing data. C error: Expected 2 fields in line 3, saw 5
+
+
+Examen_Saber_11_20132.txt:
+   Error tokenizing data. C error: Expected 2 fields in line 3, saw 9
+
+
+Examen_Saber_11_20141.txt:
+   Error tokenizing data. C error: Expected 5 fields in line 5, saw 8
+
+
+Examen_Saber_11_20142.txt:
+   Error tokenizing data. C error: Expected 1 fields in line 846, saw 2
+
+
+Examen_Saber_11_20151.txt:
+   Error tokenizing data. C error: Expected 1 fields in line 173, saw 2
+
+
+Examen_Saber_11_20152.txt:
+   Error tokenizing data. C error: Expected 1 fields in line 1251, saw 2
+
+
+Examen_Saber_11_20161.txt:
+   Error tokenizing data. C error: Expected 1 fields in line 96, saw 2
+
+
+Examen_Saber_11_20162.txt:
+   Error tokenizing data. C error: Expected 1 fields in line 3261, saw 2
+
+
+Examen_Saber_11_20171.txt:
+   Error tokenizing data. C error: Expected 6 fields in line 28, saw 8
+
+
+Examen_Saber_11_20172.txt:
+   Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+
+Examen_Saber_11_20181.txt:
+   Error tokenizing data. C error: Expected 2 fields in line 3, saw 5
+
+
+Examen_Saber_11_20182.txt:
+   Error tokenizing data. C error: Expected 3 fields in line 10, saw 4
+
+
+Examen_Saber_11_20191.txt:
+   Error tokenizing data. C error: Expected 6 fields in line 20, saw 7
+
+
+Examen_Saber_11_20192.txt:
+   Error tokenizing data. C error: Expected 6 fields in line 38, saw 8
+
+
+Examen_Saber_11_20201.txt:
+   Error tokenizing data. C error: Expected 5 fields in line 27, saw 6
+
+
+Examen_Saber_11_20202.txt:
+   Error tokenizing data. C error: Expected 1 fields in line 4, saw 5
+
+
+Examen_Saber_11_20211.txt:
+   Error tokenizing data. C error: Expected 4 fields in line 4, saw 5
+
+
+Examen_Saber_11_20212.txt:
+   Error tokenizing data. C error: Expected 4 fields in line 4, saw 7
+
+
+Examen_Saber_11_20221.txt:
+   Error tokenizing data. C error: Expected 4 fields in line 6, saw 5
+
+
+Examen_Saber_11_20222.txt:
+   Error tokenizing data. C error: Expected 3 fields in line 4, saw 5
+
+
+Examen_Saber_11_20231.txt:
+   Error tokenizing data. C error: Expected 2 fields in line 4, saw 3
+
+
+Examen_Saber_11_20232.txt:
+   Error tokenizing data. C error: Expected 3 fields in line 4, saw 5
+
+
+Examen_Saber_11_20241.txt:
+   Error tokenizing data. C error: Expected 5 fields in line 6, saw 7
+
+
+Examen_Saber_11_20242.txt:
+   Error tokenizing data. C error: Expected 1 fields in line 4, saw 3
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+
+<span class="n">CARPETA_DATOS</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;C:\Users\PC\Desktop\plan_decenal\icfes\bd_icfes&#39;</span>
+
+<span class="c1"># Analizar UN archivo para ver su estructura real</span>
+<span class="n">archivo</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CARPETA_DATOS</span><span class="p">,</span> <span class="s1">&#39;Examen_Saber_11_20242.txt&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ESTRUCTURA RAW DEL ARCHIVO&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">archivo</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">linea</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>  <span class="c1"># Solo las primeras 3 lineas</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">--- LINEA </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> ---&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">[:</span><span class="mi">500</span><span class="p">])</span>  <span class="c1"># Primeros 500 caracteres</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">break</span>
+
+<span class="c1"># Detectar separador</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CONTEO DE SEPARADORES EN LINEA 1 (HEADER)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">archivo</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">header</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+
+<span class="n">separadores</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;coma (,)&#39;</span><span class="p">:</span> <span class="n">header</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">),</span>
+    <span class="s1">&#39;punto_coma (;)&#39;</span><span class="p">:</span> <span class="n">header</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">),</span>
+    <span class="s1">&#39;tabulador (</span><span class="se">\\</span><span class="s1">t)&#39;</span><span class="p">:</span> <span class="n">header</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">),</span>
+    <span class="s1">&#39;pipe (|)&#39;</span><span class="p">:</span> <span class="n">header</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="p">),</span>
+    <span class="s1">&#39;negacion (¬)&#39;</span><span class="p">:</span> <span class="n">header</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;¬&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">sep</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">separadores</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   </span><span class="si">{</span><span class="n">sep</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Separador mas probable: </span><span class="si">{</span><span class="nb">max</span><span class="p">(</span><span class="n">separadores</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="o">=</span><span class="n">separadores</span><span class="o">.</span><span class="n">get</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Numero de columnas esperadas: </span><span class="si">{</span><span class="nb">max</span><span class="p">(</span><span class="n">separadores</span><span class="o">.</span><span class="n">values</span><span class="p">())</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============================================================
+ESTRUCTURA RAW DEL ARCHIVO
+============================================================
+
+--- LINEA 0 ---
+periodo;estu_consecutivo;estu_estudiante;estu_tipodocumento;cole_area_ubicacion;cole_bilingue;cole_calendario;cole_caracter;cole_cod_dane_establecimiento;cole_cod_dane_sede;cole_cod_depto_ubicacion;cole_cod_mcpio_ubicacion;cole_codigo_icfes;cole_depto_ubicacion;cole_genero;cole_jornada;cole_mcpio_ubicacion;cole_naturaleza;cole_nombre_establecimiento;cole_nombre_sede;cole_sede_principal;desemp_c_naturales;desemp_ingles;desemp_lectura_critica;desemp_matematicas;desemp_sociales_ciudadanas;estu_agre
+
+--- LINEA 1 ---
+20242;SB11202437197718;ESTUDIANTE;;;;;;;;;;;;;;;;;;;3;A1;4;3;4;S;;;;;;;;;N;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;93;96;71;96;90;100;67;348;57;71;68;77
+
+
+--- LINEA 2 ---
+20242;SB11202430332788;ESTUDIANTE;TI;URBANO;;A;;311001110662;311001110662;11;11001;705970;BOGOTÃ;MIXTO;UNICA;BOGOTÃ D.C.;NO OFICIAL;LICEO CENTRAL AMERICAS;LICEO CENTRAL AMERICAS - SEDE PRINCIPAL;S;2;A-;2;2;2;S;11;11001;11;11001;;;BOGOTÃ;BOGOTÃ;N;;08/08/2006;F;11;0;;BOGOTÃ D.C.;BOGOTÃ D.C.;COLOMBIA;3;;COLOMBIA;N;0;;No;;;;Tres;;;Estrato 2;;3 a 4;Igual;No;Si;No;Si;;Si;Si;;Es vendedor o trabaja en atenciÃ³n al pÃºblico;Es vendedor o trabaja en atenciÃ³n al pÃºblico;26;31;33;35;37;30;43;227;45;
+
+============================================================
+CONTEO DE SEPARADORES EN LINEA 1 (HEADER)
+============================================================
+   coma (,): 0
+   punto_coma (;): 83
+   tabulador (\t): 0
+   pipe (|): 0
+   negacion (¬): 0
+
+Separador mas probable: punto_coma (;)
+Numero de columnas esperadas: 84
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">glob</span><span class="w"> </span><span class="kn">import</span> <span class="n">glob</span>
+
+<span class="c1"># ============================================</span>
+<span class="c1"># CONFIGURACION</span>
+<span class="c1"># ============================================</span>
+<span class="n">CARPETA_DATOS</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;C:\Users\PC\Desktop\plan_decenal\icfes\bd_icfes&#39;</span>
+
+<span class="c1"># ============================================</span>
+<span class="c1"># DIAGNOSTICO DE ARCHIVOS</span>
+<span class="c1"># ============================================</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">diagnosticar_archivos</span><span class="p">():</span>
+    <span class="n">patron</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CARPETA_DATOS</span><span class="p">,</span> <span class="s1">&#39;Examen_Saber_11_*.txt&#39;</span><span class="p">)</span>
+    <span class="n">archivos</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="n">patron</span><span class="p">))</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DIAGNOSTICO DE ARCHIVOS ICFES&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+    
+    <span class="n">archivos_ok</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">archivos_error</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">archivo</span> <span class="ow">in</span> <span class="n">archivos</span><span class="p">:</span>
+        <span class="n">nombre</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">archivo</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Analizando: </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">df_full</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+                <span class="n">archivo</span><span class="p">,</span>
+                <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span>  <span class="c1"># SEPARADOR CORRECTO</span>
+                <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span><span class="p">,</span>
+                <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span>
+            <span class="p">)</span>
+            
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   OK - Columnas: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df_full</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="si">}</span><span class="s2">, Filas: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df_full</span><span class="p">)</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">archivos_ok</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                <span class="s1">&#39;archivo&#39;</span><span class="p">:</span> <span class="n">nombre</span><span class="p">,</span>
+                <span class="s1">&#39;columnas&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_full</span><span class="o">.</span><span class="n">columns</span><span class="p">),</span>
+                <span class="s1">&#39;filas&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_full</span><span class="p">)</span>
+            <span class="p">})</span>
+            
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   ERROR: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)[:</span><span class="mi">150</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">archivos_error</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                <span class="s1">&#39;archivo&#39;</span><span class="p">:</span> <span class="n">nombre</span><span class="p">,</span>
+                <span class="s1">&#39;error&#39;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+            <span class="p">})</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;RESUMEN&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Archivos OK: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">archivos_ok</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Archivos con ERROR: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">archivos_error</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">archivos_error</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">--- ARCHIVOS PROBLEMATICOS ---&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">archivos_error</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="si">{</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;archivo&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">:&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   </span><span class="si">{</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;error&#39;</span><span class="p">][:</span><span class="mi">200</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># Mostrar variacion de columnas</span>
+    <span class="k">if</span> <span class="n">archivos_ok</span><span class="p">:</span>
+        <span class="n">columnas_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;columnas&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">archivos_ok</span><span class="p">])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">--- VARIACION DE COLUMNAS ---&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Columnas encontradas: </span><span class="si">{</span><span class="n">columnas_set</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">columnas_set</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Detalle por archivo:&quot;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">archivos_ok</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   </span><span class="si">{</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;archivo&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;columnas&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> columnas&quot;</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">archivos_ok</span><span class="p">,</span> <span class="n">archivos_error</span>
+
+<span class="c1"># ============================================</span>
+<span class="c1"># EJECUTAR</span>
+<span class="c1"># ============================================</span>
+<span class="n">ok</span><span class="p">,</span> <span class="n">errores</span> <span class="o">=</span> <span class="n">diagnosticar_archivos</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============================================================
+DIAGNOSTICO DE ARCHIVOS ICFES
+============================================================
+
+Analizando: Examen_Saber_11_20081.txt
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   OK - Columnas: 91, Filas: 149,453
+
+Analizando: Examen_Saber_11_20082.txt
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   OK - Columnas: 91, Filas: 502,910
+
+Analizando: Examen_Saber_11_20091.txt
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   OK - Columnas: 88, Filas: 154,890
+
+Analizando: Examen_Saber_11_20092.txt
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   OK - Columnas: 105, Filas: 515,394
+
+Analizando: Examen_Saber_11_20101.txt
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   OK - Columnas: 83, Filas: 124,682
+
+Analizando: Examen_Saber_11_20102.txt
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   OK - Columnas: 116, Filas: 586,964
+
+Analizando: Examen_Saber_11_20111.txt
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   OK - Columnas: 116, Filas: 86,858
+
+Analizando: Examen_Saber_11_20112.txt
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   OK - Columnas: 116, Filas: 564,392
+
+Analizando: Examen_Saber_11_20121.txt
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   OK - Columnas: 120, Filas: 95,946
+
+Analizando: Examen_Saber_11_20122.txt
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">78</span>
+<span class="g g-Whitespace">     </span><span class="mi">73</span>     <span class="k">return</span> <span class="n">archivos_ok</span><span class="p">,</span> <span class="n">archivos_error</span>
+<span class="g g-Whitespace">     </span><span class="mi">75</span> <span class="c1"># ============================================</span>
+<span class="g g-Whitespace">     </span><span class="mi">76</span> <span class="c1"># EJECUTAR</span>
+<span class="g g-Whitespace">     </span><span class="mi">77</span> <span class="c1"># ============================================</span>
+<span class="ne">---&gt; </span><span class="mi">78</span> <span class="n">ok</span><span class="p">,</span> <span class="n">errores</span> <span class="o">=</span> <span class="n">diagnosticar_archivos</span><span class="p">()</span>
+
+<span class="nn">Cell In[7], line 29,</span> in <span class="ni">diagnosticar_archivos</span><span class="nt">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Analizando: </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">29</span>     <span class="n">df_full</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span>         <span class="n">archivo</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">31</span>         <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span>  <span class="c1"># SEPARADOR CORRECTO</span>
+<span class="g g-Whitespace">     </span><span class="mi">32</span>         <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">33</span>         <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span>
+<span class="g g-Whitespace">     </span><span class="mi">34</span>     <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">36</span>     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   OK - Columnas: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df_full</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="si">}</span><span class="s2">, Filas: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df_full</span><span class="p">)</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">37</span>     <span class="n">archivos_ok</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+<span class="g g-Whitespace">     </span><span class="mi">38</span>         <span class="s1">&#39;archivo&#39;</span><span class="p">:</span> <span class="n">nombre</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">39</span>         <span class="s1">&#39;columnas&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_full</span><span class="o">.</span><span class="n">columns</span><span class="p">),</span>
+<span class="g g-Whitespace">     </span><span class="mi">40</span>         <span class="s1">&#39;filas&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_full</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">41</span>     <span class="p">})</span>
+
+<span class="nn">File ~\miniconda3\envs\ml_venv\lib\site-packages\pandas\io\parsers\readers.py:1026,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1013</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1014</span>     <span class="n">dialect</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1015</span>     <span class="n">delimiter</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1022</span>     <span class="n">dtype_backend</span><span class="o">=</span><span class="n">dtype_backend</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1023</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1024</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1026</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+
+<span class="nn">File ~\miniconda3\envs\ml_venv\lib\site-packages\pandas\io\parsers\readers.py:626,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">623</span>     <span class="k">return</span> <span class="n">parser</span>
+<span class="g g-Whitespace">    </span><span class="mi">625</span> <span class="k">with</span> <span class="n">parser</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">626</span>     <span class="k">return</span> <span class="n">parser</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">nrows</span><span class="p">)</span>
+
+<span class="nn">File ~\miniconda3\envs\ml_venv\lib\site-packages\pandas\io\parsers\readers.py:1923,</span> in <span class="ni">TextFileReader.read</span><span class="nt">(self, nrows)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1916</span> <span class="n">nrows</span> <span class="o">=</span> <span class="n">validate_integer</span><span class="p">(</span><span class="s2">&quot;nrows&quot;</span><span class="p">,</span> <span class="n">nrows</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1917</span> <span class="k">try</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1918</span>     <span class="c1"># error: &quot;ParserBase&quot; has no attribute &quot;read&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1919</span>     <span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1920</span>         <span class="n">index</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1921</span>         <span class="n">columns</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1922</span>         <span class="n">col_dict</span><span class="p">,</span>
+<span class="ne">-&gt; </span><span class="mi">1923</span>     <span class="p">)</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="o">.</span><span class="n">read</span><span class="p">(</span>  <span class="c1"># type: ignore[attr-defined]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1924</span>         <span class="n">nrows</span>
+<span class="g g-Whitespace">   </span><span class="mi">1925</span>     <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1926</span> <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1927</span>     <span class="bp">self</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="nn">File ~\miniconda3\envs\ml_venv\lib\site-packages\pandas\io\parsers\c_parser_wrapper.py:239,</span> in <span class="ni">CParserWrapper.read</span><span class="nt">(self, nrows)</span>
+<span class="g g-Whitespace">    </span><span class="mi">236</span>         <span class="n">data</span> <span class="o">=</span> <span class="n">_concatenate_chunks</span><span class="p">(</span><span class="n">chunks</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">238</span>     <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">239</span>         <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reader</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">nrows</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">240</span> <span class="k">except</span> <span class="ne">StopIteration</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">241</span>     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_first_chunk</span><span class="p">:</span>
+
+<span class="nn">File parsers.pyx:820,</span> in <span class="ni">pandas._libs.parsers.TextReader.read</span><span class="nt">()</span>
+
+<span class="nn">File parsers.pyx:921,</span> in <span class="ni">pandas._libs.parsers.TextReader._read_rows</span><span class="nt">()</span>
+
+<span class="nn">File parsers.pyx:1083,</span> in <span class="ni">pandas._libs.parsers.TextReader._convert_column_data</span><span class="nt">()</span>
+
+<span class="nn">File parsers.pyx:1456,</span> in <span class="ni">pandas._libs.parsers._maybe_upcast</span><span class="nt">()</span>
+
+<span class="nn">File ~\miniconda3\envs\ml_venv\lib\site-packages\numpy\_core\multiarray.py:1140,</span> in <span class="ni">putmask</span><span class="nt">(a, mask, values)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1091</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1092</span><span class="sd">     copyto(dst, src, casting=&#39;same_kind&#39;, where=True)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1093</span><span class="sd"> </span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1135</span><span class="sd"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1136</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1137</span>     <span class="k">return</span> <span class="p">(</span><span class="n">dst</span><span class="p">,</span> <span class="n">src</span><span class="p">,</span> <span class="n">where</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1140</span> <span class="nd">@array_function_from_c_func_and_dispatcher</span><span class="p">(</span><span class="n">_multiarray_umath</span><span class="o">.</span><span class="n">putmask</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1141</span> <span class="k">def</span><span class="w"> </span><span class="nf">putmask</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="o">/</span><span class="p">,</span> <span class="n">mask</span><span class="p">,</span> <span class="n">values</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1142</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1143</span><span class="sd">     putmask(a, mask, values)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1144</span><span class="sd"> </span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1180</span><span class="sd"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1181</span><span class="sd">     &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1182</span>     <span class="k">return</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">mask</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+<section id="resumen-del-diagnostico">
+<h1>Resumen del Diagnostico<a class="headerlink" href="#resumen-del-diagnostico" title="Permalink to this heading">#</a></h1>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Periodo</p></th>
+<th class="head"><p>Columnas</p></th>
+<th class="head"><p>Observacion</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2008</p></td>
+<td><p>91</p></td>
+<td><p>Estructura inicial</p></td>
+</tr>
+<tr class="row-odd"><td><p>2009</p></td>
+<td><p>88-105</p></td>
+<td><p>Variacion entre semestres</p></td>
+</tr>
+<tr class="row-even"><td><p>2010-2011</p></td>
+<td><p>83-116</p></td>
+<td><p>Cambios graduales</p></td>
+</tr>
+<tr class="row-odd"><td><p>2012-2013</p></td>
+<td><p>120-138</p></td>
+<td><p>Maxima cantidad de columnas</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>2014-2 en adelante</strong></p></td>
+<td><p><strong>57-85</strong></p></td>
+<td><p><strong>Cambio de metodologia ICFES</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Total: ~10.5 millones de filas</strong></p>
+</section>
+<section id="problema-las-columnas-varian-mucho">
+<h1>Problema: Las columnas varian mucho<a class="headerlink" href="#problema-las-columnas-varian-mucho" title="Permalink to this heading">#</a></h1>
+<p>Necesitamos identificar las <strong>columnas comunes</strong> para poder consolidar. Ejecuta este codigo:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">CARPETA_DATOS</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;C:\Users\PC\Desktop\plan_decenal\icfes\bd_icfes&#39;</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">analizar_columnas</span><span class="p">():</span>
+    <span class="n">patron</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CARPETA_DATOS</span><span class="p">,</span> <span class="s1">&#39;Examen_Saber_11_*.txt&#39;</span><span class="p">)</span>
+    <span class="n">archivos</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="n">patron</span><span class="p">))</span>
+    
+    <span class="c1"># Obtener columnas de cada archivo</span>
+    <span class="n">columnas_por_archivo</span> <span class="o">=</span> <span class="p">{}</span>
+    
+    <span class="k">for</span> <span class="n">archivo</span> <span class="ow">in</span> <span class="n">archivos</span><span class="p">:</span>
+        <span class="n">nombre</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">archivo</span><span class="p">)</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">archivo</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span><span class="p">,</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">columnas_por_archivo</span><span class="p">[</span><span class="n">nombre</span><span class="p">]</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+    
+    <span class="c1"># Encontrar columnas comunes a TODOS los archivos</span>
+    <span class="n">columnas_comunes</span> <span class="o">=</span> <span class="n">columnas_por_archivo</span><span class="p">[</span><span class="nb">list</span><span class="p">(</span><span class="n">columnas_por_archivo</span><span class="o">.</span><span class="n">keys</span><span class="p">())[</span><span class="mi">0</span><span class="p">]]</span>
+    <span class="k">for</span> <span class="n">cols</span> <span class="ow">in</span> <span class="n">columnas_por_archivo</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="n">columnas_comunes</span> <span class="o">=</span> <span class="n">columnas_comunes</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">cols</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;COLUMNAS COMUNES A TODOS LOS ARCHIVOS: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">columnas_comunes</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">columnas_comunes</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   - </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># Guardar todas las columnas unicas</span>
+    <span class="n">todas_columnas</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">cols</span> <span class="ow">in</span> <span class="n">columnas_por_archivo</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="n">todas_columnas</span> <span class="o">=</span> <span class="n">todas_columnas</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">cols</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="si">{</span><span class="s1">&#39;=&#39;</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">60</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;TOTAL COLUMNAS UNICAS (union): </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">todas_columnas</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">60</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">columnas_comunes</span><span class="p">,</span> <span class="n">todas_columnas</span><span class="p">,</span> <span class="n">columnas_por_archivo</span>
+
+<span class="n">comunes</span><span class="p">,</span> <span class="n">todas</span><span class="p">,</span> <span class="n">por_archivo</span> <span class="o">=</span> <span class="n">analizar_columnas</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============================================================
+COLUMNAS COMUNES A TODOS LOS ARCHIVOS: 24
+============================================================
+   - cole_area_ubicacion
+   - cole_bilingue
+   - cole_calendario
+   - cole_cod_dane_establecimiento
+   - cole_cod_depto_ubicacion
+   - cole_cod_mcpio_ubicacion
+   - cole_codigo_icfes
+   - cole_genero
+   - cole_naturaleza
+   - cole_nombre_establecimiento
+   - estu_cod_reside_mcpio
+   - estu_consecutivo
+   - estu_depto_presentacion
+   - estu_estudiante
+   - estu_fechanacimiento
+   - estu_genero
+   - estu_mcpio_presentacion
+   - estu_pais_reside
+   - estu_tipodocumento
+   - fami_educacionmadre
+   - fami_educacionpadre
+   - periodo
+   - punt_ingles
+   - punt_matematicas
+
+============================================================
+TOTAL COLUMNAS UNICAS (union): 265
+============================================================
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">CARPETA_DATOS</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;C:\Users\PC\Desktop\plan_decenal\icfes\bd_icfes&#39;</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">analizar_cambio_metodologia</span><span class="p">():</span>
+    <span class="n">patron</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CARPETA_DATOS</span><span class="p">,</span> <span class="s1">&#39;Examen_Saber_11_*.txt&#39;</span><span class="p">)</span>
+    <span class="n">archivos</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="n">patron</span><span class="p">))</span>
+    
+    <span class="c1"># Obtener columnas de cada archivo</span>
+    <span class="n">info_archivos</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">archivo</span> <span class="ow">in</span> <span class="n">archivos</span><span class="p">:</span>
+        <span class="n">nombre</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">archivo</span><span class="p">)</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">archivo</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span><span class="p">,</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">columnas</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+        
+        <span class="c1"># Verificar columnas clave del cambio de metodologia</span>
+        <span class="n">tiene_punt_global</span> <span class="o">=</span> <span class="s1">&#39;punt_global&#39;</span> <span class="ow">in</span> <span class="n">columnas</span>
+        <span class="n">tiene_punt_c_naturales</span> <span class="o">=</span> <span class="s1">&#39;punt_c_naturales&#39;</span> <span class="ow">in</span> <span class="n">columnas</span>
+        <span class="n">tiene_punt_lectura_critica</span> <span class="o">=</span> <span class="s1">&#39;punt_lectura_critica&#39;</span> <span class="ow">in</span> <span class="n">columnas</span>
+        <span class="n">tiene_percentil</span> <span class="o">=</span> <span class="nb">any</span><span class="p">(</span><span class="s1">&#39;percentil&#39;</span> <span class="ow">in</span> <span class="n">c</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">columnas</span><span class="p">)</span>
+        <span class="n">tiene_desemp</span> <span class="o">=</span> <span class="nb">any</span><span class="p">(</span><span class="s1">&#39;desemp&#39;</span> <span class="ow">in</span> <span class="n">c</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">columnas</span><span class="p">)</span>
+        
+        <span class="n">info_archivos</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+            <span class="s1">&#39;archivo&#39;</span><span class="p">:</span> <span class="n">nombre</span><span class="p">,</span>
+            <span class="s1">&#39;periodo&#39;</span><span class="p">:</span> <span class="n">nombre</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Examen_Saber_11_&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">),</span>
+            <span class="s1">&#39;n_columnas&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">columnas</span><span class="p">),</span>
+            <span class="s1">&#39;punt_global&#39;</span><span class="p">:</span> <span class="n">tiene_punt_global</span><span class="p">,</span>
+            <span class="s1">&#39;punt_c_naturales&#39;</span><span class="p">:</span> <span class="n">tiene_punt_c_naturales</span><span class="p">,</span>
+            <span class="s1">&#39;punt_lectura_critica&#39;</span><span class="p">:</span> <span class="n">tiene_punt_lectura_critica</span><span class="p">,</span>
+            <span class="s1">&#39;percentil&#39;</span><span class="p">:</span> <span class="n">tiene_percentil</span><span class="p">,</span>
+            <span class="s1">&#39;desempeno&#39;</span><span class="p">:</span> <span class="n">tiene_desemp</span>
+        <span class="p">})</span>
+    
+    <span class="c1"># Mostrar tabla</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ANALISIS DE CAMBIO DE METODOLOGIA ICFES&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;Periodo&#39;</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Cols&#39;</span><span class="si">:</span><span class="s2">&lt;6</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Global&#39;</span><span class="si">:</span><span class="s2">&lt;8</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;C.Nat&#39;</span><span class="si">:</span><span class="s2">&lt;8</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Lect.Crit&#39;</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Percentil&#39;</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="s1">&#39;Desempeno&#39;</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">info</span> <span class="ow">in</span> <span class="n">info_archivos</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;periodo&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;n_columnas&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">&lt;6</span><span class="si">}</span><span class="s2"> &quot;</span>
+              <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;SI&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;punt_global&#39;</span><span class="p">]</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;NO&#39;</span><span class="si">:</span><span class="s2">&lt;8</span><span class="si">}</span><span class="s2"> &quot;</span>
+              <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;SI&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;punt_c_naturales&#39;</span><span class="p">]</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;NO&#39;</span><span class="si">:</span><span class="s2">&lt;8</span><span class="si">}</span><span class="s2"> &quot;</span>
+              <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;SI&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;punt_lectura_critica&#39;</span><span class="p">]</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;NO&#39;</span><span class="si">:</span><span class="s2">&lt;8</span><span class="si">}</span><span class="s2"> &quot;</span>
+              <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;SI&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;percentil&#39;</span><span class="p">]</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;NO&#39;</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}</span><span class="s2"> &quot;</span>
+              <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="s1">&#39;SI&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;desempeno&#39;</span><span class="p">]</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;NO&#39;</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># Detectar punto de corte</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DETECCION DE CORTE&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">info</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">info_archivos</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">info</span><span class="p">[</span><span class="s1">&#39;punt_lectura_critica&#39;</span><span class="p">]</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">info_archivos</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;punt_lectura_critica&#39;</span><span class="p">]:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;CORTE DETECTADO: </span><span class="si">{</span><span class="n">info_archivos</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;periodo&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> -&gt; </span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;periodo&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   Antes: </span><span class="si">{</span><span class="n">info_archivos</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;n_columnas&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> columnas (metodologia antigua)&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;   Despues: </span><span class="si">{</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;n_columnas&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> columnas (metodologia nueva)&quot;</span><span class="p">)</span>
+            <span class="k">break</span>
+    
+    <span class="k">return</span> <span class="n">info_archivos</span>
+
+<span class="n">info</span> <span class="o">=</span> <span class="n">analizar_cambio_metodologia</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>====================================================================================================
+ANALISIS DE CAMBIO DE METODOLOGIA ICFES
+====================================================================================================
+Periodo    Cols   Global   C.Nat    Lect.Crit  Percentil  Desempeno 
+----------------------------------------------------------------------------------------------------
+20081      91     NO       NO       NO       NO         SI        
+20082      91     NO       NO       NO       NO         SI        
+20091      88     NO       NO       NO       NO         SI        
+20092      105    NO       NO       NO       NO         SI        
+20101      83     NO       NO       NO       NO         SI        
+20102      116    NO       NO       NO       NO         SI        
+20111      116    NO       NO       NO       NO         SI        
+20112      116    NO       NO       NO       NO         SI        
+20121      120    NO       NO       NO       NO         SI        
+20122      121    NO       NO       NO       NO         SI        
+20131      138    NO       NO       NO       NO         SI        
+20132      138    NO       NO       NO       NO         SI        
+20141      138    NO       NO       NO       NO         SI        
+20142      57     SI       SI       SI       NO         SI        
+20151      58     SI       SI       SI       NO         SI        
+20152      59     SI       SI       SI       NO         SI        
+20161      72     SI       SI       SI       SI         SI        
+20162      72     SI       SI       SI       SI         SI        
+20171      85     SI       SI       SI       SI         SI        
+20172      85     SI       SI       SI       SI         SI        
+20181      85     SI       SI       SI       SI         SI        
+20182      85     SI       SI       SI       SI         SI        
+20191      85     SI       SI       SI       SI         SI        
+20192      85     SI       SI       SI       SI         SI        
+20201      85     SI       SI       SI       SI         SI        
+20202      84     SI       SI       SI       SI         SI        
+20211      84     SI       SI       SI       SI         SI        
+20212      85     SI       SI       SI       SI         SI        
+20221      84     SI       SI       SI       SI         SI        
+20222      84     SI       SI       SI       SI         SI        
+20231      84     SI       SI       SI       SI         SI        
+20232      83     SI       SI       SI       SI         SI        
+20241      84     SI       SI       SI       SI         SI        
+20242      84     SI       SI       SI       SI         SI        
+
+====================================================================================================
+DETECCION DE CORTE
+====================================================================================================
+CORTE DETECTADO: 20141 -&gt; 20142
+   Antes: 138 columnas (metodologia antigua)
+   Despues: 57 columnas (metodologia nueva)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Antes de 2014-2: Las pruebas se calificaban por áreas separadas (Lenguaje, Filosofía, etc.). No existía un punt_global estandarizado, por eso tienes tantas columnas (138); los datos estaban muy dispersos.</p>
+<p>Desde 2014-2: Se unificaron Filosofía y Lenguaje en Lectura Crítica, y se creó el Puntaje Global (0-500). Por eso el número de columnas bajó drásticamente a 57; los datos se volvieron más técnicos y compactos.</p>
+<p>Estabilidad (2017-2024): Notas que el número de columnas se estabiliza alrededor de 84-85. Ese es el formato moderno y el que te servirá para hacer comparaciones directas.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Configuración de rutas</span>
+<span class="n">CARPETA_DATOS</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;C:\Users\PC\Desktop\plan_decenal\icfes\bd_icfes&#39;</span>
+<span class="n">ARCHIVO_SALIDA</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CARPETA_DATOS</span><span class="p">,</span> <span class="s1">&#39;consolidado_trayectoria_icfes.parquet&#39;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">consolidar_trayectoria</span><span class="p">():</span>
+    <span class="c1"># 1. Identificar archivos</span>
+    <span class="n">patron</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CARPETA_DATOS</span><span class="p">,</span> <span class="s1">&#39;Examen_Saber_11_*.txt&#39;</span><span class="p">)</span>
+    <span class="n">archivos</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="n">patron</span><span class="p">))</span>
+    
+    <span class="n">lista_df</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="c1"># 2. Diccionario de variables (Estructurales + Puntajes)</span>
+    <span class="n">mapeo_columnas</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;ESTU_GENERO&#39;</span><span class="p">:</span> <span class="s1">&#39;genero&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ESTU_TIENEETNIA&#39;</span><span class="p">:</span> <span class="s1">&#39;etnia&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ESTU_DEPTO_RESIDE&#39;</span><span class="p">:</span> <span class="s1">&#39;depto_reside&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FAMI_ESTRATOVIVIENDA&#39;</span><span class="p">:</span> <span class="s1">&#39;estrato&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FAMI_EDUCACIONPADRE&#39;</span><span class="p">:</span> <span class="s1">&#39;edu_padre&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FAMI_EDUCACIONMADRE&#39;</span><span class="p">:</span> <span class="s1">&#39;edu_madre&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;COLE_NATURALEZA&#39;</span><span class="p">:</span> <span class="s1">&#39;cole_naturaleza&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;COLE_AREA_UBICACION&#39;</span><span class="p">:</span> <span class="s1">&#39;cole_area&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;COLE_DEPTO_UBICACION&#39;</span><span class="p">:</span> <span class="s1">&#39;cole_depto&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PUNT_LECTURA_CRITICA&#39;</span><span class="p">:</span> <span class="s1">&#39;punt_lectura&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PUNT_MATEMATICAS&#39;</span><span class="p">:</span> <span class="s1">&#39;punt_matematicas&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PUNT_C_NATURALES&#39;</span><span class="p">:</span> <span class="s1">&#39;punt_ciencias&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PUNT_SOCIALES_CIUDADANAS&#39;</span><span class="p">:</span> <span class="s1">&#39;punt_sociales&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PUNT_INGLES&#39;</span><span class="p">:</span> <span class="s1">&#39;punt_ingles&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PUNT_GLOBAL&#39;</span><span class="p">:</span> <span class="s1">&#39;punt_global&#39;</span>
+    <span class="p">}</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--- INICIANDO PROCESO DE CONSOLIDACIÓN ---&quot;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">archivo</span> <span class="ow">in</span> <span class="n">archivos</span><span class="p">:</span>
+        <span class="n">periodo</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">archivo</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Examen_Saber_11_&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;-&gt; Procesando: </span><span class="si">{</span><span class="n">periodo</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Lectura optimizada (solo 1 paso para evitar memoria llena)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">archivo</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+            <span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="c1"># Estandarizar a MAYÚSCULAS</span>
+            
+            <span class="c1"># Filtrar solo columnas que existan en este archivo específico</span>
+            <span class="n">cols_presentes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">mapeo_columnas</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+            <span class="n">df_temp</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">cols_presentes</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+            
+            <span class="c1"># Renombrar y marcar periodo</span>
+            <span class="n">df_temp</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">mapeo_columnas</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">df_temp</span><span class="p">[</span><span class="s1">&#39;periodo&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">periodo</span>
+            
+            <span class="n">lista_df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df_temp</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error en archivo </span><span class="si">{</span><span class="n">periodo</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># 3. Unión de datos</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Concatenando todos los periodos...&quot;</span><span class="p">)</span>
+    <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">lista_df</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    
+    <span class="c1"># 4. SOLUCIÓN AL ERROR DE ARROW: Convertir todo a string antes de guardar</span>
+    <span class="c1"># Esto evita el conflicto de &#39;pandas.period&#39; con PyArrow</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Convirtiendo tipos para compatibilidad con Parquet...&quot;</span><span class="p">)</span>
+    <span class="n">df_final</span> <span class="o">=</span> <span class="n">df_final</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> 
+
+    <span class="c1"># 5. Guardado Final</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Exportando a Parquet en: </span><span class="si">{</span><span class="n">ARCHIVO_SALIDA</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">df_final</span><span class="o">.</span><span class="n">to_parquet</span><span class="p">(</span><span class="n">ARCHIVO_SALIDA</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;pyarrow&#39;</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="s1">&#39;snappy&#39;</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">40</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡CONSOLIDACIÓN COMPLETADA!&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total registros: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df_final</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Columnas finales: </span><span class="si">{</span><span class="nb">list</span><span class="p">(</span><span class="n">df_final</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">40</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">df_final</span>
+
+<span class="c1"># EJECUCIÓN DIRECTA</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">df_consolidado</span> <span class="o">=</span> <span class="n">consolidar_trayectoria</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--- INICIANDO PROCESO DE CONSOLIDACIÓN ---
+-&gt; Procesando: 20081
+-&gt; Procesando: 20082
+-&gt; Procesando: 20091
+-&gt; Procesando: 20092
+-&gt; Procesando: 20101
+-&gt; Procesando: 20102
+-&gt; Procesando: 20111
+-&gt; Procesando: 20112
+-&gt; Procesando: 20121
+-&gt; Procesando: 20122
+-&gt; Procesando: 20131
+-&gt; Procesando: 20132
+-&gt; Procesando: 20141
+-&gt; Procesando: 20142
+-&gt; Procesando: 20151
+-&gt; Procesando: 20152
+-&gt; Procesando: 20161
+-&gt; Procesando: 20162
+-&gt; Procesando: 20171
+-&gt; Procesando: 20172
+-&gt; Procesando: 20181
+-&gt; Procesando: 20182
+-&gt; Procesando: 20191
+-&gt; Procesando: 20192
+-&gt; Procesando: 20201
+-&gt; Procesando: 20202
+-&gt; Procesando: 20211
+-&gt; Procesando: 20212
+-&gt; Procesando: 20221
+-&gt; Procesando: 20222
+-&gt; Procesando: 20231
+-&gt; Procesando: 20232
+-&gt; Procesando: 20241
+-&gt; Procesando: 20242
+
+Concatenando todos los periodos...
+Convirtiendo tipos para compatibilidad con Parquet...
+Exportando a Parquet en: C:\Users\PC\Desktop\plan_decenal\icfes\bd_icfes\consolidado_trayectoria_icfes.parquet
+
+========================================
+¡CONSOLIDACIÓN COMPLETADA!
+Total registros: 11189384
+Columnas finales: [&#39;genero&#39;, &#39;edu_padre&#39;, &#39;edu_madre&#39;, &#39;cole_naturaleza&#39;, &#39;cole_area&#39;, &#39;punt_matematicas&#39;, &#39;punt_ingles&#39;, &#39;periodo&#39;, &#39;depto_reside&#39;, &#39;estrato&#39;, &#39;cole_depto&#39;, &#39;punt_lectura&#39;, &#39;punt_ciencias&#39;, &#39;punt_sociales&#39;, &#39;punt_global&#39;, &#39;etnia&#39;]
+========================================
+</pre></div>
+</div>
+</div>
+</div>
+<p>SANTA MARTA</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Rutas</span>
+<span class="n">CARPETA_DATOS</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;C:\Users\PC\Desktop\plan_decenal\icfes\bd_icfes&#39;</span>
+<span class="n">ARCHIVO_SALIDA</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CARPETA_DATOS</span><span class="p">,</span> <span class="s1">&#39;consolidado_santa_marta.parquet&#39;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">consolidar_optimo</span><span class="p">():</span>
+    <span class="n">patron</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CARPETA_DATOS</span><span class="p">,</span> <span class="s1">&#39;Examen_Saber_11_*.txt&#39;</span><span class="p">)</span>
+    <span class="n">archivos</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="p">(</span><span class="n">patron</span><span class="p">))</span>
+    
+    <span class="c1"># Columnas estructurales y de resultado (incluyendo Municipio)</span>
+    <span class="n">mapeo</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;ESTU_GENERO&#39;</span><span class="p">:</span> <span class="s1">&#39;genero&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ESTU_MCPIO_RESIDE&#39;</span><span class="p">:</span> <span class="s1">&#39;municipio&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ESTU_DEPTO_RESIDE&#39;</span><span class="p">:</span> <span class="s1">&#39;departamento&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FAMI_ESTRATOVIVIENDA&#39;</span><span class="p">:</span> <span class="s1">&#39;estrato&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FAMI_EDUCACIONPADRE&#39;</span><span class="p">:</span> <span class="s1">&#39;edu_padre&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;FAMI_EDUCACIONMADRE&#39;</span><span class="p">:</span> <span class="s1">&#39;edu_madre&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;COLE_NATURALEZA&#39;</span><span class="p">:</span> <span class="s1">&#39;cole_naturaleza&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PUNT_LECTURA_CRITICA&#39;</span><span class="p">:</span> <span class="s1">&#39;punt_lectura&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PUNT_MATEMATICAS&#39;</span><span class="p">:</span> <span class="s1">&#39;punt_matematicas&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PUNT_C_NATURALES&#39;</span><span class="p">:</span> <span class="s1">&#39;punt_ciencias&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PUNT_SOCIALES_CIUDADANAS&#39;</span><span class="p">:</span> <span class="s1">&#39;punt_sociales&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PUNT_INGLES&#39;</span><span class="p">:</span> <span class="s1">&#39;punt_ingles&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;PUNT_GLOBAL&#39;</span><span class="p">:</span> <span class="s1">&#39;punt_global&#39;</span>
+    <span class="p">}</span>
+
+    <span class="n">lista_df</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--- CONSOLIDANDO BASE OPTIMIZADA PARA SANTA MARTA ---&quot;</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">archivo</span> <span class="ow">in</span> <span class="n">archivos</span><span class="p">:</span>
+        <span class="n">periodo</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">archivo</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Examen_Saber_11_&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Procesando: </span><span class="si">{</span><span class="n">periodo</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Leemos solo las columnas que existen en el mapeo para ahorrar RAM</span>
+        <span class="c1"># Usamos nrows si quieres probar con pocos datos primero, pero aquí va completo</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">archivo</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+        
+        <span class="c1"># Filtrar columnas presentes</span>
+        <span class="n">cols_interes</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">mapeo</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+        <span class="n">df_temp</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">cols_interes</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+        <span class="n">df_temp</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">mapeo</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        
+        <span class="c1"># FILTRO CRÍTICO: Solo Santa Marta o Magdalena para reducir el tamaño</span>
+        <span class="c1"># Esto hace que tu base de datos sea 90% más ligera</span>
+        <span class="k">if</span> <span class="s1">&#39;municipio&#39;</span> <span class="ow">in</span> <span class="n">df_temp</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+            <span class="n">df_temp</span> <span class="o">=</span> <span class="n">df_temp</span><span class="p">[</span><span class="n">df_temp</span><span class="p">[</span><span class="s1">&#39;municipio&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;SANTA MARTA&#39;</span><span class="p">,</span> <span class="n">na</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">case</span><span class="o">=</span><span class="kc">False</span><span class="p">)]</span>
+        
+        <span class="n">df_temp</span><span class="p">[</span><span class="s1">&#39;periodo&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">periodo</span>
+        
+        <span class="c1"># Convertir puntajes a numérico de una vez (limpieza inmediata)</span>
+        <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df_temp</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">&#39;punt_&#39;</span> <span class="ow">in</span> <span class="n">col</span><span class="p">:</span>
+                <span class="n">df_temp</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df_temp</span><span class="p">[</span><span class="n">col</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
+        
+        <span class="n">lista_df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df_temp</span><span class="p">)</span>
+
+    <span class="c1"># Unir y guardar</span>
+    <span class="n">df_final</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">lista_df</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    
+    <span class="c1"># Convertir categorías a string para evitar el error de Arrow</span>
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;genero&#39;</span><span class="p">,</span> <span class="s1">&#39;municipio&#39;</span><span class="p">,</span> <span class="s1">&#39;departamento&#39;</span><span class="p">,</span> <span class="s1">&#39;estrato&#39;</span><span class="p">,</span> <span class="s1">&#39;edu_padre&#39;</span><span class="p">,</span> <span class="s1">&#39;edu_madre&#39;</span><span class="p">,</span> <span class="s1">&#39;cole_naturaleza&#39;</span><span class="p">,</span> <span class="s1">&#39;periodo&#39;</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df_final</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+            <span class="n">df_final</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+
+    <span class="n">df_final</span><span class="o">.</span><span class="n">to_parquet</span><span class="p">(</span><span class="n">ARCHIVO_SALIDA</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="s1">&#39;snappy&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Base consolidada lista: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df_final</span><span class="p">)</span><span class="si">}</span><span class="s2"> registros de Santa Marta.&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df_final</span>
+
+<span class="n">df_sm</span> <span class="o">=</span> <span class="n">consolidar_optimo</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--- CONSOLIDANDO BASE OPTIMIZADA PARA SANTA MARTA ---
+Procesando: 20081
+Procesando: 20082
+Procesando: 20091
+Procesando: 20092
+Procesando: 20101
+Procesando: 20102
+Procesando: 20111
+Procesando: 20112
+Procesando: 20121
+Procesando: 20122
+Procesando: 20131
+Procesando: 20132
+Procesando: 20141
+Procesando: 20142
+Procesando: 20151
+Procesando: 20152
+Procesando: 20161
+Procesando: 20162
+Procesando: 20171
+Procesando: 20172
+Procesando: 20181
+Procesando: 20182
+Procesando: 20191
+Procesando: 20192
+Procesando: 20201
+Procesando: 20202
+Procesando: 20211
+Procesando: 20212
+Procesando: 20221
+Procesando: 20222
+Procesando: 20231
+Procesando: 20232
+Procesando: 20241
+Procesando: 20242
+
+Base consolidada lista: 1434607 registros de Santa Marta.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
+
+<span class="c1"># Configuración de estilo para el Jupyter Book</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;ggplot&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_context</span><span class="p">(</span><span class="s2">&quot;notebook&quot;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">analizar_politica_publica</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="c1"># 1. Evolución de la Brecha Educativa (Oficial vs Privado)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;periodo&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;punt_global&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;cole_naturaleza&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Efecto de la Naturaleza del Colegio en el Desempeño (Santa Marta)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Promedio Puntaje Global&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+    <span class="c1"># 2. Análisis de Trayectoria: Influencia del nivel educativo de la madre</span>
+    <span class="c1"># Filtramos periodos recientes para mayor claridad</span>
+    <span class="n">df_reciente</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;periodo&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="s1">&#39;20191&#39;</span><span class="p">]</span>
+    
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_reciente</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;edu_madre&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;punt_global&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Set3&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Influencia de la Educación Materna en la Trayectoria Actual&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">analizar_politica_publica</span><span class="p">(</span><span class="n">df_sm</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;contextlib.ExitStack at 0x2472c171fd0&gt;
+<img alt="_images/792c97b0f6ef5565c6b2f130446759422eadb2be53e5d14bdcbd831316ecd19e.png" src="_images/792c97b0f6ef5565c6b2f130446759422eadb2be53e5d14bdcbd831316ecd19e.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\PC\AppData\Local\Temp\ipykernel_36772\1603130071.py:22: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(data=df_reciente, x=&#39;edu_madre&#39;, y=&#39;punt_global&#39;, palette=&#39;Set3&#39;)
+</pre></div>
+</div>
+<img alt="_images/017d0dc715f5a85eac3ebf4d656a6f13e7e550def936174e047a2896b064edcd.png" src="_images/017d0dc715f5a85eac3ebf4d656a6f13e7e550def936174e047a2896b064edcd.png" />
+</div>
+</div>
+<p>A partir de los gráficos que generaste (la serie de tiempo por naturaleza del colegio y el diagrama de caja de educación materna), podemos extraer conclusiones potentes sobre la política pública en Santa Marta.</p>
+<ol class="arabic simple">
+<li><p>Interpretación de lo que ya tienes
+Gráfico de Tendencia (Oficial vs. Privado):</p></li>
+</ol>
+<p>Interpretación: La brecha es persistente. Si la línea de los colegios Oficiales se mantiene plana mientras el sector No Oficial sube, la política pública de calidad educativa no está logrando el “cierre de brechas”.</p>
+<p>Punto clave: Observa el periodo de la pandemia (2020). Si la caída fue mayor en colegios oficiales, indica una falla en la política de conectividad o acceso a herramientas digitales en el distrito.</p>
+<p>Gráfico de Educación Materna (Boxplot):</p>
+<p>Interpretación: Es el gráfico de la movilidad social. Si las medianas (las líneas dentro de las cajas) suben a medida que aumenta la educación de la madre, los datos confirman que en Santa Marta el éxito académico aún está muy “heredado”.</p>
+<p>Uso en el Plan Decenal: Este gráfico justifica por qué la política pública no debe ser solo pedagógica, sino social (apoyo a familias).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Código para Heatmap</span>
+<span class="n">pivot_estrato</span> <span class="o">=</span> <span class="n">df_sm</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;periodo&#39;</span><span class="p">,</span> <span class="s1">&#39;estrato&#39;</span><span class="p">])[</span><span class="s1">&#39;punt_global&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">pivot_estrato</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.1f&quot;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;YlGnBu&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Evolución del Puntaje Global por Estrato en Santa Marta&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/5f34d506d3ae324995981f65de65d7da1178bcb3a29b98ba5828fac71bf6e25a.png" src="_images/5f34d506d3ae324995981f65de65d7da1178bcb3a29b98ba5828fac71bf6e25a.png" />
+</div>
+</div>
+<p>Persistencia de la Brecha Socioeconómica: Observa cómo los colores más claros (puntajes más bajos) se concentran consistentemente en el Estrato 1 y 2, mientras que los colores oscuros (puntajes altos) están en el Estrato 4, 5 y 6. Esto indica que, a pesar de los esfuerzos, el estrato sigue siendo el predictor más fuerte del éxito académico en el distrito.</p>
+<p>Zonas de Estancamiento: Si ves que en los últimos periodos (2022-2024) los colores del Estrato 1 no se han oscurecido significativamente, significa que la política pública de calidad educativa no está logrando compensar las carencias del hogar.</p>
+<p>El “Techo de Cristal”: Es muy probable que el Estrato 1 en colegios oficiales de Santa Marta tenga un “techo” cerca de los 230-240 puntos. Romper ese techo es el objetivo que debería plantear el nuevo Plan Decenal.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">stripplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_sm</span><span class="p">[</span><span class="n">df_sm</span><span class="p">[</span><span class="s1">&#39;periodo&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;20242&#39;</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;estrato&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;punt_global&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;edu_madre&#39;</span><span class="p">,</span> <span class="n">dodge</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Dispersión de Puntajes: Estrato vs. Educación Materna (Santa Marta 2024)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper left&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Educación Madre&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/da6abf7dddabd897d93697fb0454f80fb248300f392c4e44c1a86bc97ebbf5b1.png" src="_images/da6abf7dddabd897d93697fb0454f80fb248300f392c4e44c1a86bc97ebbf5b1.png" />
+</div>
+</div>
+<ol class="arabic simple">
+<li><p>Interpretación: El “Muro” Socioeconómico en Santa Marta
+Este gráfico muestra cómo se distribuye cada estudiante individualmente. Aquí la interpretación para el Plan Decenal:</p></li>
+</ol>
+<p>El Peso de la Herencia: Observa que en el Estrato 1, la gran masa de puntos (estudiantes) está concentrada por debajo de los 250 puntos. Los puntos que logran subir (los “outliers”) suelen tener colores asociados a madres con educación superior. Esto confirma que el capital cultural del hogar pesa más que la infraestructura del colegio.</p>
+<p>Techo de Cristal en Estratos Bajos: Hay un límite físico visible. Muy pocos estudiantes de Estrato 1 o 2 logran superar los 350 puntos. La política pública debe enfocarse en esos “casos de éxito” para entender qué están haciendo bien y replicarlo.</p>
+<p>La Inequidad Vertical: Compara la “columna” del Estrato 1 con la del Estrato 6 (o los más altos). El Estrato 6 es una columna mucho más delgada pero mucho más alta. En Santa Marta, nacer en Estrato 6 casi garantiza estar por encima del promedio distrital, mientras que en Estrato 1 es una lotería.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Preparar datos para el radar (Promedios por área y naturaleza)</span>
+<span class="n">areas</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;punt_matematicas&#39;</span><span class="p">,</span> <span class="s1">&#39;punt_lectura&#39;</span><span class="p">,</span> <span class="s1">&#39;punt_ciencias&#39;</span><span class="p">,</span> <span class="s1">&#39;punt_sociales&#39;</span><span class="p">,</span> <span class="s1">&#39;punt_ingles&#39;</span><span class="p">]</span>
+<span class="n">df_radar</span> <span class="o">=</span> <span class="n">df_sm</span><span class="p">[</span><span class="n">df_sm</span><span class="p">[</span><span class="s1">&#39;periodo&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;20242&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;cole_naturaleza&#39;</span><span class="p">)[</span><span class="n">areas</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="c1"># Aquí usarías una librería como plotly o un plot polar de matplotlib</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fixing random state for reproducibility</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">19680801</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
-<span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">ii</span> <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
-<span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">coolwarm</span>
-<span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.prop_cycle&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cycler</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">)))</span>
+<span class="c1"># 1. Preparar los datos</span>
+<span class="n">areas</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;punt_matematicas&#39;</span><span class="p">,</span> <span class="s1">&#39;punt_lectura&#39;</span><span class="p">,</span> <span class="s1">&#39;punt_ciencias&#39;</span><span class="p">,</span> <span class="s1">&#39;punt_sociales&#39;</span><span class="p">,</span> <span class="s1">&#39;punt_ingles&#39;</span><span class="p">]</span>
+<span class="n">df_radar</span> <span class="o">=</span> <span class="n">df_sm</span><span class="p">[</span><span class="n">df_sm</span><span class="p">[</span><span class="s1">&#39;periodo&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;20242&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;cole_naturaleza&#39;</span><span class="p">)[</span><span class="n">areas</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 
+<span class="c1"># 2. Configuración del gráfico de radar</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;punt_&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">areas</span><span class="p">]</span>
+<span class="n">num_vars</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
 
-<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.lines</span><span class="w"> </span><span class="kn">import</span> <span class="n">Line2D</span>
-<span class="n">custom_lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">0.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">.5</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">)]</span>
+<span class="c1"># Ángulos para cada eje</span>
+<span class="n">angles</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">num_vars</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">angles</span> <span class="o">+=</span> <span class="n">angles</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># Cerrar el círculo</span>
 
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-<span class="n">lines</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">custom_lines</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Cold&#39;</span><span class="p">,</span> <span class="s1">&#39;Medium&#39;</span><span class="p">,</span> <span class="s1">&#39;Hot&#39;</span><span class="p">]);</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="n">subplot_kw</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">polar</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df_radar</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="n">areas</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+    <span class="n">values</span> <span class="o">+=</span> <span class="n">values</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># Cerrar el círculo</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">angles</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;cole_naturaleza&#39;</span><span class="p">])</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">angles</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
+
+<span class="c1"># Arreglar etiquetas</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_theta_offset</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_theta_direction</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_thetagrids</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">angles</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span> <span class="n">labels</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Perfil de Competencias: Oficial vs Privado (Santa Marta 2024)&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper right&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/8b54122a9446d638fb719a833034fcdb46a1b0f2cff31a43f88d170e76dfa6b8.png" src="_images/8b54122a9446d638fb719a833034fcdb46a1b0f2cff31a43f88d170e76dfa6b8.png" />
+<img alt="_images/c3e3f93ad749ee449f37cfdb52989fae239f54b354521be89135ea2de9be7683.png" src="_images/c3e3f93ad749ee449f37cfdb52989fae239f54b354521be89135ea2de9be7683.png" />
 </div>
 </div>
-<p>There is a lot more that you can do with outputs (such as including interactive outputs)
-with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
-</section>
+<ol class="arabic simple">
+<li><p>Interpretación del Radar: “El Perfil de la Brecha”
+El gráfico de radar es revelador porque no solo nos dice quién saca mejor puntaje, sino en qué son mejores.</p></li>
+</ol>
+<p>Dominio Uniforme: Observa que la figura del sector “NO OFICIAL” (rojo) envuelve completamente a la del sector “OFICIAL” (azul). Esto indica que la superioridad del sector privado en Santa Marta es sistémica: son mejores en todas las áreas evaluadas sin excepción.</p>
+<p>La Debilidad en Inglés: Mira el eje de Inglés. Es donde la distancia entre las dos líneas es más pronunciada. Para Santa Marta, como Distrito Turístico, esto es una señal de alerta de política pública: el sistema oficial no está preparando a los jóvenes para la principal vocación económica de su propia ciudad.</p>
+<p>Equilibrio en el Sector Oficial: La línea azul es casi un pentágono regular, lo que indica que el sector oficial es equilibrado (no es mucho mejor en matemáticas que en sociales), pero ese equilibrio está en un nivel de desempeño bajo (cerca de los 40-45 puntos).</p>
+<p>Lectura y Matemáticas: Son las áreas donde el sector privado saca mayor ventaja competitiva. Esto suele estar ligado a la intensidad horaria y a los recursos pedagógicos (bibliotecas y laboratorios).</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -532,10 +1892,10 @@ with your book. For more information about this, see <a class="reference externa
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Resumen del Diagnostico</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-las-columnas-varian-mucho">Problema: Las columnas varian mucho</a></li>
 </ul>
+
   </nav></div>
 
 </div></div>
